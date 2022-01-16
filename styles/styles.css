@@ -1,0 +1,36 @@
+:root {
+    --heading: #ffea8a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Home */
+
+.home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg {
+    height: 500px;
+    background-image: url('../images/home-background-img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.heading {
+    position: fixed;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    color: var(--heading);
+}
+
