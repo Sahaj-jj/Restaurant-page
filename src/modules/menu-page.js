@@ -1,7 +1,7 @@
 import createHtmlElement from "./util";
 
 const loadMenu = () => {
-    const el = createHtmlElement('div');
+    const el = createHtmlElement('div', ['menu'], 'Hi');
     return el;
 }
 

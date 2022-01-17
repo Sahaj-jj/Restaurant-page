@@ -15,7 +15,7 @@ const LoadContent = (() => {
     $header.appendChild($links);
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) $header.classList.add('scroll');
+      if (window.scrollY > 500) $header.classList.add('scroll');
       else if ($header.classList.contains('scroll')) $header.classList.remove('scroll');
     })
     return $header;
