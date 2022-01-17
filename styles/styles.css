@@ -52,6 +52,24 @@ li:hover {
 
 /* Footer */
 
+footer {
+    text-align: center;
+    height: 60px;
+    width: 80%;
+    background-color: white;
+    border-top: 1px solid grey;
+    color: black;
+    font-weight: lighter;
+    font-size: 0.8em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-text {
+    padding: 20px;
+}
+
 /* Home */
 
 .home-container {
@@ -80,7 +98,7 @@ li:hover {
 }
 
 .heading.main {
-    font-size: 6em;
+    font-size: 5em;
     font-family: 'Italianno', cursive;
     font-weight: 100;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
