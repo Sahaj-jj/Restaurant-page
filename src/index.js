@@ -15,10 +15,16 @@ const LoadContent = (() => {
     $header.appendChild($links);
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 500) $header.classList.add('scroll');
+      if (window.scrollY > 200) $header.classList.add('scroll');
       else if ($header.classList.contains('scroll')) $header.classList.remove('scroll');
     })
     return $header;
+  }
+
+  const createFooter = () => {
+    const $footer = document.createElement('footer');
+    $footer.appendChild(createHtmlElement('div', ['footer-text'], 'Created by Sahaj-jj'));
+    return $footer;
   }
 
   function navigate() {
@@ -40,6 +46,7 @@ const LoadContent = (() => {
   const init = () => {
     content.appendChild(createHeader());
     content.appendChild(loadHome());
+    content.appendChild(createFooter());
 
     const navbtns = document.querySelectorAll('header li');
     navbtns.forEach(btn => btn.addEventListener('click', navigate));
