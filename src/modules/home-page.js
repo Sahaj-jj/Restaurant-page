@@ -5,7 +5,7 @@ const loadHome = () => {
 
     const bgSection = createHtmlElement('div', ['section']);
 
-    let subHeadingText = 'Finest Italian Cuisine';
+    let subHeadingText = 'Authentic Italian Cuisine';
     const subHeading = createHtmlElement('h2', ['heading', 'sub'], subHeadingText);
 
     let headingText = "Bonta'del Forno";
