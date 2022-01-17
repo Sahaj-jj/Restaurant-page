@@ -10,10 +10,14 @@ const createHeader = () => {
   });
   const $header = document.createElement('header');
   $header.appendChild($links);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) $header.classList.add('scroll');
+    else if ($header.classList.contains('scroll')) $header.classList.remove('scroll');
+  })
+
   return $header;
 }
-
-
 
 const loadContent = () => {
   const content = document.getElementById('content');

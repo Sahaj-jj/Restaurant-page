@@ -3,13 +3,22 @@ import createHtmlElement from "./util";
 const loadHome = () => {
     const homeContainer = createHtmlElement('div', ['home-container']);
 
-    const bg = createHtmlElement('div', ['bg']);
+    const bgSection = createHtmlElement('div', ['section']);
 
-    let headingText = 'Finest cuisine';
-    const heading = createHtmlElement('div', ['heading', 'text'], headingText);
+    let subHeadingText = 'Finest Italian Cuisine';
+    const subHeading = createHtmlElement('h2', ['heading', 'sub'], subHeadingText);
 
-    homeContainer.appendChild(bg);
-    homeContainer.appendChild(heading);
+    let headingText = "Bonta'del Forno";
+    const heading = createHtmlElement('h1', ['heading', 'main'], headingText);
+
+    let txt = 'Placeholder';
+    const text = createHtmlElement('div', ['text'], txt);
+
+    bgSection.appendChild(heading);
+    bgSection.appendChild(subHeading);
+    homeContainer.appendChild(bgSection);
+    homeContainer.appendChild(text);
+
 
     return homeContainer;
 };
