@@ -10,7 +10,7 @@ const loadHome = () => {
     bgSection.appendChild(createHtmlElement('h2', ['heading', 'sub'], subHeadingText));
 
     // Discover Button
-    const btn = createHtmlElement('div', ['btn'], 'Explore');
+    const btn = createHtmlElement('div', ['btn'], 'Discover');
 
     // Text Section
     headingText = 'Italian to the Bone!';
@@ -30,15 +30,15 @@ const loadHome = () => {
     container.appendChild(textContainer);
     container.appendChild(imageContainer);
 
-    window.addEventListener('scroll', () => {
-        imageContainer.style.transform = `translateX(${window.scrollY * 0.9}px) rotate(${window.scrollY * 0.5}deg) `;
-    })
-
     // Home Container
     const homeContainer = createHtmlElement('div', ['home-container']);
     homeContainer.appendChild(bgSection);
     homeContainer.appendChild(btn);
     homeContainer.appendChild(container);
+
+    window.addEventListener('scroll', () => {
+        imageContainer.style.transform = `translateX(${window.scrollY * 0.9}px) rotate(${window.scrollY * 0.5}deg) `;
+    })
 
     return homeContainer;
 };
