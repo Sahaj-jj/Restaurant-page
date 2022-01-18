@@ -2,7 +2,6 @@
 
 A basic restaurant website with multiple webpages.
 ### [Live preview](https://sahaj-jj.github.io/Restaurant-page/)
-#
 
 ## Tools used
 - HTML
@@ -10,7 +9,6 @@ A basic restaurant website with multiple webpages.
 - JavaScript
 - Webpack
 - Node Package Manager
-#
 
 ## About
 
