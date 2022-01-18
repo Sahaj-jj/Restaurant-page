@@ -12,6 +12,6 @@ A basic restaurant website with multiple webpages.
 
 ## About
 
-The objective of the project was to lern and demonstrate the use of webpack and npm. All DOM elements were created dynamically using vanilla JS.
+The objective of the project was to learn and demonstrate the use of webpack and npm. All DOM elements were created dynamically using vanilla JS.
 ### 
 Made while following the curriculum of [The Odin Project](https://sahaj-jj.github.io/Restaurant-page/)
