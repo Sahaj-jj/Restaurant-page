@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
 :root {
     --header:red;
     --heading: #ff9100;
@@ -43,11 +44,23 @@ header ul {
 }
 
 header ul li {
+    padding: 8px;
     list-style: none;
+    transition: transform 0.3s;
 }
 
 li:hover {
     cursor: pointer;
+    transform: scale(1.2);
+}
+
+li.active {
+    border-bottom: 1px solid var(--heading);
+}
+
+header.scroll li.active {
+    border-color: rgb(255, 81, 0);
+    border-width: 3px;
 }
 
 /* Footer */
@@ -107,6 +120,23 @@ footer {
     font-size: 1em;
     margin-top: 150px;
     color: var(--heading);
+}
+
+.home-container .btn {
+    position: fixed;
+    margin: 0 auto;
+    bottom: 0;
+    margin-bottom: 70px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(255, 0, 98);
+    cursor: pointer;
 }
 
 .container {
@@ -198,6 +228,31 @@ footer {
     font-weight: bolder;
 } 
 
+/* About */
+
+.about-container {
+    margin-top: 200px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-container img {
+    width: 400px;
+    flex: 0 0 auto;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgb(68, 68, 68);
+}
+
+.text-container {
+    margin: 100px;
+    width: 400px;
+}
 
 
 
