@@ -28,7 +28,7 @@ const LoadContent = (() => {
   }
 
   function navigate() {
-    content.lastChild.remove();
+    while(content.childElementCount > 1) content.lastChild.remove();
     switch(this.textContent) {
       case 'Home':
         content.appendChild(loadHome());
@@ -40,6 +40,8 @@ const LoadContent = (() => {
       //   content.appendChild(loadAbout());
       //   break;
     }
+    content.append(createFooter());
+    window.scrollTo(0, 0);
   }
   
 
