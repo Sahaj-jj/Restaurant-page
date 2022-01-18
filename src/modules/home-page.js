@@ -9,6 +9,9 @@ const loadHome = () => {
     bgSection.appendChild(createHtmlElement('h1', ['heading', 'main'], headingText));
     bgSection.appendChild(createHtmlElement('h2', ['heading', 'sub'], subHeadingText));
 
+    // Discover Button
+    const btn = createHtmlElement('div', ['btn'], 'Explore');
+
     // Text Section
     headingText = 'Italian to the Bone!';
     let txt = `Founded by 1st generation of immigrants from Sicily, 
@@ -34,6 +37,7 @@ const loadHome = () => {
     // Home Container
     const homeContainer = createHtmlElement('div', ['home-container']);
     homeContainer.appendChild(bgSection);
+    homeContainer.appendChild(btn);
     homeContainer.appendChild(container);
 
     return homeContainer;
